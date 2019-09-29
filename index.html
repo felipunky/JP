@@ -1,18 +1,57 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css\bootstrap.min.css">
+    <link rel="stylesheet" href="css\style.css">
     <title>Juan Pablo Gutiérrez</title>
   </head>
+  <!--<body class="BackgroundImage">-->
   <body>
-      <div class="container">
-        <div class="row">
-            <div class="col">
-                Test
-            </div>    
-        </div>      
+    <div class="container">
+      <div class="row">
+          <div class="col-6 col-md-4">
+              <h1 class="Title">
+                  Juan Pablo Gutiérrez <br>
+                  <span class="TitleColour">Architect</span>
+              </h1>
+          </div>
       </div>
+    </div>
+
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicators -->
+        <ul class="carousel-indicators">
+            <li data-target="#demo" data-slide-to="0" class="active"></li>
+            <li data-target="#demo" data-slide-to="1"></li>
+            <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+
+        <!-- The slideshow -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Images/JPG Portfolio-17.jpg" alt="Matlosana Mall" width="1100" height="500">
+            </div>
+            <div class="carousel-item">
+                <img src="Images/JPG Portfolio-11.png" alt="Baker Street" width="1100" height="500">
+            </div>
+            <div class="carousel-item">
+                <img src="Images/JPG Portfolio-22.png" alt="Benmore Gardens" width="1100" height="500">
+            </div>
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+
+    <script src="js\jquery.min.js"></script>
+    <script src="js\bootstrap.min.js"></script>
   </body>
 </html>
