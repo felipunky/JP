@@ -40,3 +40,13 @@
     height: 100%;
 
 }
+
+.Inner
+{
+
+    //max-width: 200px;
+    //max-height: 100px;
+    width: 100%;
+    height: auto;
+
+}
