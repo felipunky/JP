@@ -1,11 +1,17 @@
 $( document ).ready( function()
 {
                     
+    $( ".carousel-inner img" ).prop( "st", 1 );
+                    
     $( ".Blur" ).on( "mouseenter touchstart", function()
     {
                     
         $( ".Title" ).css( "color", "#ffbf00" );
         $( ".TitleColour" ).css( "color", "#ffffff" );
+                    
+        $( ".carousel-inner img" ).css( "filter", "blur(4px)" );
+        /*$( ".carousel-inner img" ).animate( { st: '+=0.1' }, { step: function( st, fx )
+                                            { $( this ).css( { 'transform':'scale( '+st+' )' } ); }, duration : '1000' }, 'linear' );*/
         
     });
                     
@@ -14,34 +20,26 @@ $( document ).ready( function()
                     
         $( ".Title" ).css( "color", "#ffffff" );
         $( ".TitleColour" ).css( "color", "#ffbf00" );
+        $( ".carousel-inner img" ).css( "filter", "blur(0px)" );
+                    //$( ".carousel-inner img" ).css( "filter", "blur(0px)" );
+        /*$( ".carousel-inner img" ).animate( { st: '1.0' }, { step: function( st, fx )
+                                            { $( this ).css( { 'transform':'scale( '+st+' )' } ); }, duration : '1000' }, 'linear' );*/
         
     });
-            
                     
-    $( ".carousel-item" ).on( "mouseenter touchstart", function()
+    $( ".carousel-inner img" ).on( "mouseenter touchstart", function()
     {
-         
-         $( ".carousel-inner img" ).animate( { opacity: '+=0.1' }, { step: function( now, fx )
-                                            { $( this ).css( { 'transform':'scale( '+now+' )' } ); }, duration : 1000 }, 'linear' );
-        //$( ".carousel-inner img" ).animate( { 'transform':'scale( 1.5 )' }, 1000 );
+                                  
+        $( this ).animate( { st: '+=0.1' }, { step: function( st, fx )
+                           { $( this ).css( { 'transform':'scale( '+st+' )' } ); }, duration : '800' }, 'linear' );
     
     });
                 
-    /*$('#foo').animate({  borderSpacing: -90 }, {
-                      step: function(now,fx) {
-                      $(this).css('-webkit-transform','rotate('+now+'deg)');
-                      $(this).css('-moz-transform','rotate('+now+'deg)');
-                      $(this).css('transform','rotate('+now+'deg)');
-                      },
-                      duration:'slow'
-                      },'linear');*/
-    
-    $( ".carousel-item" ).on( "mouseleave touchend", function()
+    $( ".carousel-inner img" ).on( "mouseleave touchend", function()
     {
     
-        //$( ".carousel-inner img" ).css( { 'transform':'scale( 1.0 )' } );
-        $( ".carousel-inner img" ).animate( { opacity: '-=0.1' }, { step: function( now, fx )
-                                            { $( this ).css( { 'transform':'scale( '+now+' )' } ); }, duration : 1000 }, 'linear' );
+        $( this ).animate( { st: '1.0' }, { step: function( st, fx )
+                           { $( this ).css( { 'transform':'scale( '+st+' )' } ); }, duration : '800' }, 'linear' );
                              
     });
                     
