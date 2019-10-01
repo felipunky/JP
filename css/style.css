@@ -1,4 +1,4 @@
-﻿@font-face
+@font-face
 {
 
     font-family: "AvenirNextLTPro";
@@ -17,16 +17,35 @@
 body
 {
 
-    background-color: black;
+    background-color: #1f1f1f;
     font-family: BanglaMN;
     font-size: 12pt;
+    color: white;
 
+}
+
+.Contact
+{
+    
+    font-family: AvenirNextLTPro;
+    font-size: 16px;
+    padding-top: 10px;
+    color: white;
+    
+}
+
+.Contact:hover
+{
+    
+    color: #ffbf00;
+    
 }
 
 .Title
 {
 
-    color: black;
+    font-family: AvenirNextLTPro;
+    color: white;
     font-size: 1em;
     text-transform: uppercase;
     position: absolute;
@@ -40,6 +59,7 @@ body
 .TitleColour
 {
 
+    color: #ffbf00;
     font-family: AvenirNextLTPro;
     font-size: 80%;
 
@@ -50,7 +70,7 @@ body
 
     backdrop-filter: blur(2px);
     border-style: solid;
-    border-color: black;
+    border-color: #fff;
 
 }
 
@@ -69,4 +89,35 @@ body
     width: 100%;
     height: auto;
 
+}
+
+.About
+{
+    
+    transform: translate( 0%, 50% );
+    
+}
+
+.InnerAbout
+{
+    
+    transform: translate( 0%, 5% );
+    font-family: AvenirNextLTPro;
+    text-align: justify;
+    
+}
+
+.Link
+{
+    
+    color: #9e9e9e;
+    
+}
+
+.Link:hover
+{
+    
+    color: #ffbf00;
+    text-decoration: none;
+    
 }
