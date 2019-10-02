@@ -19,7 +19,7 @@ body
 
     background-color: #1f1f1f;
     font-family: BanglaMN;
-    font-size: 12pt;
+    font-size: 4vw;
     color: white;
 
 }
@@ -56,6 +56,13 @@ body
 
 }
 
+.Title:hover
+{
+    
+    text-decoration: none;
+    
+}
+
 .TitleColour
 {
 
@@ -68,11 +75,20 @@ body
 .Blur
 {
 
+    font-size: 100%;
     backdrop-filter: url(commonfilters.svg#filter);
     backdrop-filter: url(filters.svg#filter) blur(4px) saturate(150%) grayscale(30%);
     border-style: solid;
+    border-width: thin;
     border-color: #fff;
 
+}
+
+.Blur:hover
+{
+    
+    text-decoration: none;
+    
 }
 
 .carousel-inner img 
@@ -97,15 +113,17 @@ body
 .About
 {
     
-    transform: translate( 0%, 50% );
+    transform: translate(0%, 50%);
+    text-size: 10%;
     
 }
 
 .InnerAbout
 {
     
-    transform: translate( 0%, 5% );
+    transform: translate( 0%, 1% );
     font-family: AvenirNextLTPro;
+    font-size: 30%;
     text-align: justify;
     
 }
@@ -121,6 +139,55 @@ body
 {
     
     color: #ffbf00;
+    text-decoration: none;
+    
+}
+
+.Images
+{
+ 
+    backdrop-filter: url(commonfilters.svg#filter);
+    backdrop-filter: url(filters.svg#filter) blur(10px) saturate(250%) grayscale(80%);
+    border-style: solid;
+    border-width: thin;
+    border-color: #fff;
+    display: inline;
+    color: #fff;
+    font-size: 60%;
+
+}
+
+.Images:hover
+{
+    
+    color: #ffbf00;
+    
+}
+
+.ImagesBlack
+{
+    
+    backdrop-filter: url(commonfilters.svg#filter);
+    backdrop-filter: url(filters.svg#filter) blur(10px) saturate(250%) grayscale(80%);
+    border-style: solid;
+    border-width: thin;
+    border-color: #000;
+    display: inline;
+    color: #000;
+    font-size: 60%;
+    
+}
+
+.ImagesBlack:hover
+{
+    
+    color: #ffbf00;
+    
+}
+
+.HTMLLink:hover
+{
+    
     text-decoration: none;
     
 }
