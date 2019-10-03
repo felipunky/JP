@@ -14,14 +14,59 @@
 
 }
 
+input[type='text'],
+input[type='address'],
+input[type='url'],
+input[type='password'],
+input[type='email'],
+input[type="search"],
+input[type="tel"],
+textarea
+{
+    
+    display: inline-block;
+    width:100%;
+    font-size:80%;
+    border-radius: 0.75em;
+    color: #3d3d3d;
+    background-color:#000;
+    border:0;
+    border: 1px solid #d1d1d1;
+    border-radius: 0;
+    padding:0.2rem 1rem 0;
+    height:3.6em;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+    -webkit-appearance: none;
+    -webkit-transition: all .15s;
+    -o-transition: all .15s;
+    transition: all .15s;
+    
+}
+
 body
 {
 
-    background-color: #1f1f1f;
+    background-color: #131313;
     font-family: BanglaMN;
     font-size: 4vw;
     color: white;
 
+}
+
+.Bar
+{
+    
+    background-color: #101010;
+    
+}
+
+.Form
+{
+ 
+    font-size: 30%;
+    margin-top: 10px;
+    
 }
 
 .Contact
@@ -31,6 +76,7 @@ body
     font-size: 16px;
     padding-top: 10px;
     color: white;
+    text-decoration: none;
     
 }
 
@@ -114,17 +160,55 @@ body
 {
     
     transform: translate(0%, 50%);
-    text-size: 10%;
+    font-size: 60%;
+    background-color: #101010;
+    
+}
+
+.About:hover
+{
+    
+    color: #ffbf00;
     
 }
 
 .InnerAbout
 {
     
+    display: none;
     transform: translate( 0%, 1% );
     font-family: AvenirNextLTPro;
-    font-size: 30%;
+    font-size: 50%;
     text-align: justify;
+    background-color: #101010;
+    
+}
+
+.ContactMail
+{
+    
+    transform: translate(0%, 50%);
+    font-size: 60%;
+    background-color: #101010;
+    
+}
+
+.ContactMail:hover
+{
+    
+    color: #ffbf00;
+    
+}
+
+.InnerContactMail
+{
+    
+    display: none;
+    transform: translate( 0%, 1% );
+    font-family: AvenirNextLTPro;
+    font-size: 90%;
+    text-align: justify;
+    background-color: #101010;
     
 }
 
@@ -147,13 +231,13 @@ body
 {
  
     backdrop-filter: url(commonfilters.svg#filter);
-    backdrop-filter: url(filters.svg#filter) blur(10px) saturate(250%) grayscale(80%);
+    backdrop-filter: url(filters.svg#filter) blur(4px) saturate(150%) grayscale(30%);
     border-style: solid;
     border-width: thin;
     border-color: #fff;
     display: inline;
     color: #fff;
-    font-size: 60%;
+    font-size: 40%;
 
 }
 
@@ -168,13 +252,13 @@ body
 {
     
     backdrop-filter: url(commonfilters.svg#filter);
-    backdrop-filter: url(filters.svg#filter) blur(10px) saturate(250%) grayscale(80%);
+    backdrop-filter: url(filters.svg#filter) blur(4px) saturate(150%) grayscale(30%);
     border-style: solid;
     border-width: thin;
     border-color: #000;
     display: inline;
     color: #000;
-    font-size: 60%;
+    font-size: 40%;
     
 }
 
@@ -189,5 +273,90 @@ body
 {
     
     text-decoration: none;
+    
+}
+
+.form-group
+{
+    
+    font-size: 40%;
+    margin-bottom: 30px;
+
+}
+
+.btn
+{
+    
+    color:#fff;
+    letter-spacing: 0.025em;
+    font-size: 1rem;
+    display: inline-block;
+    border:0;
+    border-radius: 0;
+    padding: 1.1em 2.28em 1em;
+    background-color: #000;
+    text-decoration: none;
+    -webkit-transition: all .3s ease-out!important;
+    transition: all .3s ease-out!important;
+
+}
+
+.btn:hover,
+.btn:focus
+{
+    
+    background-color:#ffbf00;
+    color: #fff;
+    -webkit-box-shadow:none;
+    box-shadow: none;
+    outline: none!important;
+    
+}
+
+.btn-upper
+{
+    
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+
+
+.btn-yellow
+{
+    
+    background: #ffbf00;
+    color: #000;
+
+}
+
+.btn-yellow:hover,
+.btn-yellow:focus
+{
+    
+    background: #000;
+
+}
+
+.MediumWhite
+{
+    
+    color: #fff;
+    font-size: 0.5em;
+    text-transform: uppercase;
+    letter-spacing: -0.025em;
+    line-height: 1.33333;
+    margin:0 0 5rem;
+    
+}
+
+.MediumYellow
+{
+    
+    color: #ffbf00;
+    text-transform: uppercase;
+    letter-spacing: -0.025em;
+    line-height: 1.33333;
+    margin:0 0 5rem;
     
 }

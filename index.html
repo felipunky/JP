@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="referrer" content="origin">
     <link rel="stylesheet" href="css\bootstrap.min.css">
     <link rel="stylesheet" href="css\style.css">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
@@ -12,23 +13,25 @@
   <!--<body class="BackgroundImage">-->
   <body>
       <div class="container">
-          <div class="col-2">
-              <div class="row">
-                  <div class="col-1">
-                      <div class="row">
-                          <div class="col-1">
-                              <a href="https://api.whatsapp.com/send?phone=27768924672">
-                                  <ion-icon name="logo-whatsapp" class="Contact"></ion-icon>
-                              </a>
+          <div class="container Bar">
+              <div class="col-2">
+                  <div class="row">
+                      <div class="col-1">
+                          <div class="row">
+                              <div class="col-1">
+                                  <a href="https://api.whatsapp.com/send?phone=27768924672">
+                                      <ion-icon name="logo-whatsapp" class="Contact"></ion-icon>
+                                  </a>
+                              </div>
                           </div>
                       </div>
-                  </div>
-                  <div class="col-1">
-                      <div class="row">
-                          <div class="col-1">
-                              <a href="https://za.linkedin.com/in/juan-pablo-gutierrez-0b78a31b">
-                                  <ion-icon name="logo-linkedin" class="Contact"></ion-icon>
-                              </a>
+                      <div class="col-1">
+                          <div class="row">
+                              <div class="col-1">
+                                  <a href="https://za.linkedin.com/in/juan-pablo-gutierrez-0b78a31b">
+                                      <ion-icon name="logo-linkedin" class="Contact"></ion-icon>
+                                  </a>
+                              </div>
                           </div>
                       </div>
                   </div>
@@ -64,15 +67,15 @@
                 <img src="Images/33 baker/BakerStreet33.png" alt="Baker Street" width="1100" height="500" class="CarouImage">
                 <div class="carousel-caption">
                     <a href="html/Baker.html" class="HTMLLink">
-                        <h5 class="Images">Baker 33</h5>
+                        <h5 class="Images">33 Baker</h5>
                     </a>
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="Images/Kyalami.png" alt="Benmore Gardens" width="1100" height="500" class="CarouImage">
+                <img src="Images/Kyalami Corner Mall/Kyalami_8.jpg" alt="Benmore Gardens" width="1100" height="500" class="CarouImage">
                 <div class="carousel-caption">
                     <a href="html/Kyalami.html" class="HTMLLink">
-                        <h5 class="ImagesBlack">Kyalami</h5>
+                        <h5 class="Images">Kyalami</h5>
                     </a>
                 </div>
             </div>
@@ -89,9 +92,9 @@
     
     <div class="row">
         <div class="col">
-            <h5 class="About">
+            <p class="About">
                 About Me
-            </h5>
+            </p>
             <p class="InnerAbout">
             I am a Colombian Architect with over 25 years of professional experience. I have passion for design that is strengthened by a
             comprehensive understanding of building technology and general technical skills. I have a creative and energetic personality that allows
@@ -117,6 +120,35 @@
             to achive goals.
             I’m looking for a job as a Associate Director or Design Director.
             </p>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col">
+            <p class="ContactMail">Contact</p>
+            <div class="InnerContactMail">
+                <form id="contactform" method="POST">
+                    <div class="row">
+                        <div class="Form col-sm-6">
+                            <input type="text" name="name" required="" placeholder="Name*" aria-required="true">
+                    </div>
+                    <div class="Form col-sm-6">
+                        <input type="email" name="email" placeholder="Email">
+                    </div>
+                    <div class="Form col-sm-12">
+                        <input type="text" name="subject" placeholder="Subject (Optional)">
+                    </div>
+                    <div class="Form col-sm-12">
+                        <textarea name="message" required="" placeholder="Message*" aria-required="true"></textarea>
+                    </div>
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <div class="col-sm-12"><button type="submit" class="btn">Post Comment</button></div>
+                </form>
+                <script>
+                    var contactform =  document.getElementById('contactform');
+                    contactform.setAttribute('action', 'http://formspree.io/' + 'juan20pablo' + '@' + 'hotmail' + '.' + 'com');
+                </script>
+            </div>
         </div>
     </div>
 

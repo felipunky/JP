@@ -1,6 +1,6 @@
 $( document ).ready( function()
 {
-               
+                    
     $( ".carousel-caption" ).on( "mouseenter touchstart", function()
     {
     
@@ -46,22 +46,70 @@ $( document ).ready( function()
                     
     var counter = 0.0;
                     
-    $( ".carousel-inner img:not(.carousel-caption):not(.carousel-indicators):not(.carousel-control-next):not(.carousel-control-prev)" ).on( "mouseenter touchstart", function()
+    $( ".HTMLLink" ).on( "mouseenter touchstart", function()
     {
            
                                                                                                                                     
-        $( this ).animate( { st: '+=0.04' }, { step: function( ux, fx )
+        $( ".carousel-inner img" ).animate( { st: '+=0.04' }, { step: function( ux, fx )
                            { $( this ).css( { 'transform':'scale( '+ux+' )' } ); }, duration : '500' }, 'linear' );
 
                                                                                                                                            
     });
                 
-    $( ".carousel-inner img:not(.carousel-caption):not(.carousel-indicators):not(.carousel-control-next):not(.carousel-control-prev)" ).on( "mouseleave touchend", function()
+    $( ".HTMLLink" ).on( "mouseleave touchend", function()
     {
 
-        $( this ).animate( { st: '1.0' }, { step: function( ux, fx )
+        $( ".carousel-inner img" ).animate( { st: '1.0' }, { step: function( ux, fx )
                            { $( this ).css( { 'transform':'scale( '+ux+' )' } ); }, duration : '500' }, 'linear' );
                              
     });
+                    
+    $( ".Link" ).on( "mouseenter touchstart", function()
+    {
     
+    
+        $( this ).animate( { "font-size": "110%" }, 200 );
+    
+    
+    });
+    
+    $( ".Link" ).on( "mouseleave touchend", function()
+    {
+    
+        $( this ).animate( { "font-size": "100%" }, 200 );
+    
+    });
+                    
+    $( ".About, .InnerAbout" ).on( "mouseenter touchstart", function()
+    {
+
+         $( ".About" ).animate( { "font-size": "65%" }, 200 );
+         $( ".InnerAbout" ).fadeIn( 500 );
+
+    });
+    
+    $( ".InnerAbout, .CarouImage, .carousel-indicators" ).on( "mouseleave touchend", function()
+     {
+     
+         $( ".About" ).animate( { "font-size": "60%" }, 200 );
+         $( ".InnerAbout" ).fadeOut( 500 );
+     
+     });
+                    
+    $( ".ContactMail" ).on( "mouseenter touchstart", function()
+    {
+
+        $( this ).animate( { "font-size": "65%" }, 200 );
+        $( ".InnerContactMail" ).fadeIn( 500 );
+
+    });
+                    
+    $( ".InnerContactMail, .InnerAbout" ).on( "mouseleave touchend", function()
+    {
+
+        $( ".ContactMail" ).animate( { "font-size": "60%" }, 200 );
+        $( this ).fadeOut( 500 );
+
+    });
+                    
 });
