@@ -19,26 +19,25 @@ $( document ).ready( function()
     $( ".Blur" ).on( "mouseenter touchstart", function()
     {
                     
+        $( this ).animate( { "font-size": "110%" }, 200 );
+                    
         $( ".Title" ).css( "color", "#ffbf00" );
         $( ".TitleColour" ).css( "color", "#ffffff" );
                     
         $( ".carousel-inner img" ).css( "filter", "blur(4px)" );
         $( ".HTMLLink" ).fadeOut( 500 );
-        /*$( ".carousel-inner img" ).animate( { st: '+=0.1' }, { step: function( st, fx )
-                                            { $( this ).css( { 'transform':'scale( '+st+' )' } ); }, duration : '1000' }, 'linear' );*/
         
     });
                     
     $( ".Blur" ).on( "mouseleave touchend", function()
     {
+                 
+        $( this ).animate( { "font-size": "100%" }, 200 );
                     
         $( ".Title" ).css( "color", "#ffffff" );
         $( ".TitleColour" ).css( "color", "#ffbf00" );
         $( ".carousel-inner img" ).css( "filter", "blur(0px)" );
         $( ".HTMLLink" ).fadeIn( 500 );
-                    //$( ".carousel-inner img" ).css( "filter", "blur(0px)" );
-        /*$( ".carousel-inner img" ).animate( { st: '1.0' }, { step: function( st, fx )
-                                            { $( this ).css( { 'transform':'scale( '+st+' )' } ); }, duration : '1000' }, 'linear' );*/
         
     });
                     
@@ -79,6 +78,34 @@ $( document ).ready( function()
         $( this ).animate( { "font-size": "100%" }, 200 );
     
     });
+       
+    $( ".Contact" ).on( "mouseenter touchstart", function()
+    {
+
+       $( this ).animate( { "font-size": "32px" }, 200 );
+
+    });
+    
+    $( ".Contact" ).on( "mouseleave touchend", function()
+    {
+
+        $( this ).animate( { "font-size": "16px" }, 200 );
+
+    });
+                    
+    $( ".Images" ).on( "mouseenter touchstart", function()
+    {
+
+        $( this ).animate( { "font-size": "50%" }, 200 );
+
+    });
+    
+    $( ".Images" ).on( "mouseleave touchend", function()
+    {
+
+        $( this ).animate( { "font-size": "40%" }, 200 );
+
+    });
                     
     $( ".About, .InnerAbout" ).on( "mouseenter touchstart", function()
     {
@@ -104,11 +131,11 @@ $( document ).ready( function()
 
     });
                     
-    $( ".InnerContactMail, .InnerAbout" ).on( "mouseleave touchend", function()
+    $( ".InnerContactMail, .InnerAbout, ConctactMail" ).on( "mouseleave touchend", function()
     {
 
         $( ".ContactMail" ).animate( { "font-size": "60%" }, 200 );
-        $( this ).fadeOut( 500 );
+        $( ".InnerContactMail" ).fadeOut( 500 );
 
     });
                     
