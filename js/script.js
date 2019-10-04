@@ -115,7 +115,7 @@ $( document ).ready( function()
 
     });
     
-    $( ".InnerAbout, .CarouImage, .carousel-indicators" ).on( "mouseleave touchend", function()
+    $( ".About, .InnerAbout, .CarouImage, .carousel-indicators" ).on( "mouseleave touchend", function()
      {
      
          $( ".About" ).animate( { "font-size": "60%" }, 200 );
@@ -123,10 +123,10 @@ $( document ).ready( function()
      
      });
                     
-    $( ".ContactMail" ).on( "mouseenter touchstart", function()
+    $( ".ContactMail, InnerContactMail, .Form" ).on( "mouseenter touchstart", function()
     {
 
-        $( this ).animate( { "font-size": "65%" }, 200 );
+        $( ".ContactMail" ).animate( { "font-size": "65%" }, 200 );
         $( ".InnerContactMail" ).fadeIn( 500 );
 
     });

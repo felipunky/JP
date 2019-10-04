@@ -76,7 +76,6 @@ body
     font-size: 16px;
     padding-top: 10px;
     color: white;
-    text-decoration: none;
     
 }
 
@@ -84,6 +83,7 @@ body
 {
     
     color: #ffbf00;
+    text-decoration: none;
     
 }
 
@@ -173,6 +173,34 @@ body
 }
 
 .InnerAbout
+{
+    
+    display: none;
+    transform: translate( 0%, 1% );
+    font-family: AvenirNextLTPro;
+    font-size: 50%;
+    text-align: justify;
+    background-color: #101010;
+    
+}
+
+.Projects
+{
+    
+    transform: translate(0%, 50%);
+    font-size: 60%;
+    background-color: #101010;
+    
+}
+
+.Projects:hover
+{
+    
+    color: #ffbf00;
+    
+}
+
+.InnerProjects
 {
     
     display: none;
@@ -359,4 +387,32 @@ body
     line-height: 1.33333;
     margin:0 0 5rem;
     
+}
+
+.ImageMatlosana
+{
+
+    /*text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+    width: 100%;
+    height: auto;
+
+}
+
+.SubTitle
+{
+
+    font-size: 40%;
+
+}
+
+.MatlosanaText
+{
+
+    font-size: 30%;
+    text-align: justify;
+
 }
