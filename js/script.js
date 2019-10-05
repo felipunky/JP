@@ -115,7 +115,7 @@ $( document ).ready( function()
 
     });
     
-    $( ".About, .InnerAbout, .CarouImage, .carousel-indicators" ).on( "mouseleave touchend", function()
+    $( ".InnerAbout, .CarouImage, .carousel-indicators" ).on( "mouseleave touchend", function()
      {
      
          $( ".About" ).animate( { "font-size": "60%" }, 200 );
