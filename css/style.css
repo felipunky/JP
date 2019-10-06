@@ -64,7 +64,7 @@ body
 .Form
 {
  
-    font-size: 30%;
+    font-size: 50%;
     margin-top: 10px;
     
 }
@@ -200,6 +200,7 @@ body
     transform: translate(0%, 50%);
     font-size: 60%;
     background-color: #101010;
+    text-decoration: none;
     
 }
 
@@ -258,6 +259,21 @@ body
 }
 
 .Link:hover
+{
+    
+    color: #ffbf00;
+    text-decoration: none;
+    
+}
+
+.ProjectLink
+{
+    
+    color: #fff;
+    
+}
+
+.ProjectLink:hover
 {
     
     color: #ffbf00;
@@ -422,7 +438,8 @@ body
 .MatlosanaText
 {
 
-    font-size: 30%;
+    font-size: 40%;
     text-align: justify;
+    padding-top: 20px;
 
 }

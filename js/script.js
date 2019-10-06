@@ -138,5 +138,21 @@ $( document ).ready( function()
         $( ".InnerContactMail" ).fadeOut( 500 );
 
     });
+    
+    $( ".Projects" ).on( "mouseenter touchstart", function()
+    {
+
+        $( ".Projects" ).animate( { "font-size": "65%" }, 200 );
+        $( ".InnerProjects" ).fadeIn( 500 );
+
+    });
+                    
+    $( ".InnerProjects, .InnerAbout, ConctactMail" ).on( "mouseleave touchend", function()
+    {
+
+        $( ".Projects" ).animate( { "font-size": "60%" }, 200 );
+        $( ".InnerProjects" ).fadeOut( 500 );
+
+    });
                     
 });
