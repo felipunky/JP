@@ -154,5 +154,19 @@ $( document ).ready( function()
         $( ".InnerProjects" ).fadeOut( 500 );
 
     });
+    
+    $( ".Home" ).on( "mouseenter touchstart", function()
+    {
+
+         $( this ).animate( { "font-size": "45%" }, 200 );
+
+    });
+    
+    $( ".Home" ).on( "mouseleave touchend", function()
+    {
+
+         $( this ).animate( { "font-size": "40%" }, 200 );
+
+    });
                     
 });

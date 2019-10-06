@@ -281,6 +281,22 @@ body
     
 }
 
+.Home
+{
+    
+    color: #fff;
+    font-size: 40%;
+    
+}
+
+.Home:hover
+{
+    
+    color: #ffbf00;
+    text-decoration: none;
+    
+}
+
 .Images
 {
  
