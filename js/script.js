@@ -131,7 +131,7 @@ $( document ).ready( function()
 
     });
                     
-    $( ".InnerContactMail, .InnerAbout, ConctactMail" ).on( "mouseleave touchend", function()
+    $( ".Projects, .InnerProjects, .InnerContactMail, .InnerAbout, ConctactMail" ).on( "mouseleave touchend", function()
     {
 
         $( ".ContactMail" ).animate( { "font-size": "60%" }, 200 );
