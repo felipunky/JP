@@ -169,6 +169,7 @@ body
 .About
 {
     
+    display: none;
     transform: translate(0%, 50%);
     font-size: 60%;
     background-color: #101010;
@@ -197,6 +198,7 @@ body
 .Projects
 {
     
+    display: none;
     transform: translate(0%, 50%);
     font-size: 60%;
     background-color: #101010;
@@ -226,6 +228,7 @@ body
 .ContactMail
 {
     
+    display: none;
     transform: translate(0%, 50%);
     font-size: 60%;
     background-color: #101010;

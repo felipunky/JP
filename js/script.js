@@ -1,6 +1,8 @@
 $( document ).ready( function()
 {
-                    
+       
+    //$( ".spinner-grow" ).fadeOut( 500 );
+       
     $( ".carousel-caption" ).on( "mouseenter touchstart", function()
     {
     
@@ -106,12 +108,15 @@ $( document ).ready( function()
         $( this ).animate( { "font-size": "40%" }, 200 );
 
     });
-                    
+    
+    $( ".About" ).fadeIn( 3500 );
+    $( ".InnerAbout" ).fadeIn( 4000 );
+    
     $( ".About, .InnerAbout" ).on( "mouseenter touchstart", function()
     {
 
          $( ".About" ).animate( { "font-size": "65%" }, 200 );
-         $( ".InnerAbout" ).fadeIn( 500 );
+         //$( ".InnerAbout" ).fadeIn( 500 );
 
     });
     
@@ -119,10 +124,11 @@ $( document ).ready( function()
      {
      
          $( ".About" ).animate( { "font-size": "60%" }, 200 );
-         $( ".InnerAbout" ).fadeOut( 500 );
+         //$( ".InnerAbout" ).fadeOut( 500 );
      
      });
-                    
+    
+    /*
     $( ".ContactMail, InnerContactMail, .Form" ).on( "mouseenter touchstart", function()
     {
 
@@ -130,20 +136,43 @@ $( document ).ready( function()
         $( ".InnerContactMail" ).fadeIn( 500 );
 
     });
-                    
+                
     $( ".Projects, .InnerProjects, .InnerContactMail, .InnerAbout, ConctactMail" ).on( "mouseleave touchend", function()
     {
 
         $( ".ContactMail" ).animate( { "font-size": "60%" }, 200 );
-        $( ".InnerContactMail" ).fadeOut( 500 );
+        //$( ".InnerContactMail" ).fadeOut( 500 );
 
     });
+    */
+    
+    $( ".ContactMail" ).fadeIn( 3500 );
+    $( ".InnerContactMail" ).fadeIn( 4000 );
+    
+    $( ".ContactMail" ).on( "mouseenter touchstart", function()
+    {
+
+        $( ".ContactMail" ).animate( { "font-size": "65%" }, 200 );
+        //$( ".InnerContactMail" ).fadeIn( 500 );
+
+    });
+    
+    $( ".ConctactMail" ).on( "mouseleave touchend", function()
+    {
+
+        $( ".ContactMail" ).animate( { "font-size": "60%" }, 200 );
+        //$( ".InnerContactMail" ).fadeOut( 500 );
+
+    });
+    
+    $( ".Projects" ).fadeIn( 3500 );
+    $( ".InnerProjects" ).fadeIn( 4000 );
     
     $( ".Projects" ).on( "mouseenter touchstart", function()
     {
 
         $( ".Projects" ).animate( { "font-size": "65%" }, 200 );
-        $( ".InnerProjects" ).fadeIn( 500 );
+        //$( ".InnerProjects" ).fadeIn( 500 );
 
     });
                     
