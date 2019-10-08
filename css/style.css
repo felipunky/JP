@@ -87,6 +87,24 @@ body
     
 }
 
+.Name
+{
+    
+    font-family: AvenirNextLTPro;
+    font-size: 16px;
+    padding-top: 10px;
+    color: white;
+    
+}
+
+.Name:hover
+{
+    
+    color: #ffbf00;
+    text-decoration: none;
+    
+}
+
 .Title
 {
 
