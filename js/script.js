@@ -45,8 +45,6 @@ $( document ).ready( function()
                     
     $( ".carousel-inner img" ).prop( "st", 1 );
                     
-    var counter = 0.0;
-                    
     $( ".HTMLLink" ).on( "mouseenter touchstart", function()
     {
            
@@ -112,75 +110,57 @@ $( document ).ready( function()
     $( ".About" ).fadeIn( 3500 );
     $( ".InnerAbout" ).fadeIn( 4000 );
     
-    $( ".About, .InnerAbout" ).on( "mouseenter touchstart", function()
+    $( ".About" ).on( "mouseenter touchstart", function()
     {
 
-         $( ".About" ).animate( { "font-size": "65%" }, 200 );
+         $( this ).animate( { "font-size": "65%" }, 200 );
          //$( ".InnerAbout" ).fadeIn( 500 );
 
     });
     
-    $( ".InnerAbout, .CarouImage, .carousel-indicators" ).on( "mouseleave touchend", function()
+    $( ".About" ).on( "mouseleave touchend", function()
      {
      
-         $( ".About" ).animate( { "font-size": "60%" }, 200 );
+         $( this ).animate( { "font-size": "60%" }, 200 );
          //$( ".InnerAbout" ).fadeOut( 500 );
      
      });
     
-    /*
-    $( ".ContactMail, InnerContactMail, .Form" ).on( "mouseenter touchstart", function()
-    {
-
-        $( ".ContactMail" ).animate( { "font-size": "65%" }, 200 );
-        $( ".InnerContactMail" ).fadeIn( 500 );
-
-    });
-                
-    $( ".Projects, .InnerProjects, .InnerContactMail, .InnerAbout, ConctactMail" ).on( "mouseleave touchend", function()
-    {
-
-        $( ".ContactMail" ).animate( { "font-size": "60%" }, 200 );
-        //$( ".InnerContactMail" ).fadeOut( 500 );
-
-    });
-    */
-    
-    $( ".ContactMail" ).fadeIn( 3500 );
-    $( ".InnerContactMail" ).fadeIn( 4000 );
+    $( ".ContactMail" ).fadeIn( 4000 );
+    $( ".InnerContactMail" ).fadeIn( 4500 );
     
     $( ".ContactMail" ).on( "mouseenter touchstart", function()
     {
 
-        $( ".ContactMail" ).animate( { "font-size": "65%" }, 200 );
+        $( this ).animate( { "font-size": "65%" }, 200 );
         //$( ".InnerContactMail" ).fadeIn( 500 );
 
     });
     
-    $( ".ConctactMail" ).on( "mouseleave touchend", function()
+    $( ".ContactMail" ).on( "mouseleave touchend", function()
     {
 
-        $( ".ContactMail" ).animate( { "font-size": "60%" }, 200 );
+        $( this ).animate( { "font-size": "60%" }, 200 );
         //$( ".InnerContactMail" ).fadeOut( 500 );
 
     });
     
-    $( ".Projects" ).fadeIn( 3500 );
-    $( ".InnerProjects" ).fadeIn( 4000 );
+    $( ".Projects" ).fadeIn( 5000 );
+    $( ".InnerProjects" ).fadeIn( 5500 );
     
     $( ".Projects" ).on( "mouseenter touchstart", function()
     {
 
-        $( ".Projects" ).animate( { "font-size": "65%" }, 200 );
+        $( this ).animate( { "font-size": "65%" }, 200 );
         //$( ".InnerProjects" ).fadeIn( 500 );
 
     });
                     
-    $( ".InnerProjects, .InnerAbout, ConctactMail" ).on( "mouseleave touchend", function()
+    $( ".Projects" ).on( "mouseleave touchend", function()
     {
 
-        $( ".Projects" ).animate( { "font-size": "60%" }, 200 );
-        $( ".InnerProjects" ).fadeOut( 500 );
+        $( this ).animate( { "font-size": "60%" }, 200 );
+        //$( ".InnerProjects" ).fadeOut( 500 );
 
     });
     

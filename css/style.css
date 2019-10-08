@@ -284,6 +284,21 @@ body
     
 }
 
+.AboutLink
+{
+    
+    color: #fff;
+    
+}
+
+.AboutLink:hover
+{
+    
+    color: #ffbf00;
+    text-decoration: none;
+    
+}
+
 .Home
 {
     
@@ -450,6 +465,7 @@ body
 .SubTitle
 {
 
+    text-align: justify;
     font-size: 40%;
 
 }
@@ -460,5 +476,25 @@ body
     font-size: 40%;
     text-align: justify;
     padding-top: 20px;
+
+}
+
+.AboutText
+{
+
+    font-size: 40%;
+    text-align: justify;
+    padding-top: 20px;
+    background-size: cover;
+    
+}
+
+.ImageCenter
+{
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 
 }
