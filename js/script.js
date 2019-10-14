@@ -177,5 +177,5 @@ $( document ).ready( function()
          $( this ).animate( { "font-size": "40%" }, 200 );
 
     });
-                    
+
 });
