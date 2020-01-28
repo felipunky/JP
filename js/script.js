@@ -22,6 +22,7 @@ $( document ).ready( function()
     {
                     
         $( this ).animate( { "font-size": "110%" }, 200 );
+        $( ".TitleColour" ).text( "Portfolio" );
                     
         $( ".Title" ).css( "color", "#ffbf00" );
         $( ".TitleColour" ).css( "color", "#ffffff" );
@@ -38,6 +39,7 @@ $( document ).ready( function()
                     
         $( ".Title" ).css( "color", "#ffffff" );
         $( ".TitleColour" ).css( "color", "#ffbf00" );
+        $( ".TitleColour" ).text( "Architect" );
         $( ".carousel-inner img" ).css( "filter", "blur(0px)" );
         $( ".HTMLLink" ).fadeIn( 500 );
         

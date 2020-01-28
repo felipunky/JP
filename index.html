@@ -43,9 +43,9 @@
         <div class="carousel-inner">
             
             <div class="carousel-item active">
-                <img src="Images/JPG Portfolio-17.jpg" alt="Matlosana Mall" width="1100" height="500" class="CarouImage">
+                <img class="lazyload" data-src="Images/JPG Portfolio-17.jpg" src="Images/JPG Portfolio-17_Small.jpg" alt="Matlosana Mall" width="1100" height="500" class="CarouImage">
                 <a href="https://www.yumpu.com/en/embed/view/50OSKlNowaYEyWIU" class="Title">
-                    <div "col-6 col-md-4 col-xs-3">
+                    <div "col-lg-6 col-md-4 col-xs-3">
                         <h1 class="Blur">Juan Pablo Gutierrez<br><span class="TitleColour">Architect</span></h1>
                     </div>
                     <div class="carousel-caption">
@@ -56,7 +56,7 @@
                 </a>
             </div>
             <div class="carousel-item">
-                <img src="Images/33 baker/BakerStreet33.png" alt="Baker Street" width="1100" height="500" class="CarouImage">
+                <img class="lazyload" data-src="Images/33 baker/BakerStreet33.png" src="Images/33 baker/BakerStreet33_Small.png" alt="Baker Street" width="1100" height="500" class="CarouImage">
                 <div class="carousel-caption">
                     <a href="html/Baker.html" class="HTMLLink">
                         <h5 class="Images">33 Baker</h5>
@@ -64,7 +64,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="Images/Kyalami Corner Mall/Kyalami_7.jpg" alt="Benmore Gardens" width="1100" height="500" class="CarouImage">
+                <img class="lazyload" data-src="Images/Kyalami Corner Mall/Kyalami_7.jpg" src="Images/Kyalami Corner Mall/Kyalami_7_Small.jpg" alt="Benmore Gardens" width="1100" height="500" class="CarouImage">
                 <div class="carousel-caption">
                     <a href="html/Kyalami.html" class="HTMLLink">
                         <h5 class="Images">Kyalami</h5>
@@ -95,7 +95,7 @@
             comprehensive understanding of building technology and general technical skills. Click here to read more.
             </div>
             
-            <img src="Images/AboutMe.jpg" class="ImageCenter">
+            <img class="lazyload" data-src="Images/AboutMe.jpg" src="Images/AboutMe_Small.jpg" class="ImageCenter">
             
         </div>
     </div>
@@ -144,5 +144,14 @@
     <script src="js\jquery.min.js"></script>
     <script src="js\bootstrap.min.js"></script>
     <script src="js\script.js"></script>
+
+    <script src="js\lazyload.min.js"></script>
+    <script>
+        window.addEventListener("load", function(event) {
+            let images = document.querySelectorAll("[data-src]");
+            let lazy = lazyload(images, {"src": "data-src"});
+        });
+    </script>
+
   </body>
 </html>
