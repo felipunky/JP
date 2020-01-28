@@ -25,7 +25,7 @@
                         My name is Juan Pablo Gutierrez and I am a Colombian Architect with over 25 years of professional experience.
                     </h4>
                     <a href="../Images/AboutBackground.png">
-                        <img src="../Images/AboutBackground.png" class="ImageCenter">
+                        <img class="lazyload ImageCenter" data-src="../Images/AboutBackground.png" src="../Images/AboutBackground_Small.png">
                     </a>
                     <div class="AboutText">
                         <p>
@@ -61,6 +61,13 @@
     <script src="..\js\jquery.min.js"></script>
     <script src="..\js\bootstrap.min.js"></script>
     <script src="..\js\script.js"></script>
+    <script src="..\js\lazyload.min.js"></script>
+    <script>
+        window.addEventListener("load", function(event) {
+            let images = document.querySelectorAll("[data-src]");
+            let lazy = lazyload(images, {"src": "data-src"});
+        });
+    </script>
 
 </body>
 </html>

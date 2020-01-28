@@ -21,71 +21,44 @@
         </div>
 
         <div class="row">
-
             <div class="col-auto MatlosanaTitle">
-
                 <h3>
-
-                    Projects
-                    
+                    Projects               
                 </h3> 
-
             </div>
-
         </div>
 
         <div class="row">
-
             <div class="col-auto MatlosanaTitle" style="color:white">
-
                 <h6>
-
                     Matlosana Mall
-                    
                 </h6> 
-
                 <a href="..\html\Matlosana.html">
-                    <img src="..\Images\Matlosana Mall\Matlosana_5.jpg" class="carousel-inner img">
+                    <img class="lazyload carousel-inner img" data-src="..\Images\Matlosana Mall\Matlosana_5.jpg" src="..\Images\Matlosana Mall\Matlosana_5_Small.jpg">
                 </a>
-
             </div>
-
         </div>
 
         <div class="row">
-
                 <div class="col-auto MatlosanaTitle" style="color:white">
-    
                     <h6>
-    
                         Kyalami Corner 
-                        
                     </h6> 
-
                     <a href="..\html\Kyalami.html">
-                        <img src="..\Images\Kyalami Corner Mall\Kyalami_13.jpg" class="ImageCenterZoom">
+                        <img class="lazyload ImageCenterZoom" data-src="..\Images\Kyalami Corner Mall\Kyalami_13.jpg" src="..\Images\Kyalami Corner Mall\Kyalami_13_Small.jpg">
                     </a>
-    
                 </div>
-    
         </div>
 
         <div class="row">
-
                 <div class="col-auto MatlosanaTitle" style="color:white">
-    
                     <h6>
-    
                         33 Baker Street
-                        
                     </h6> 
-
                     <a href="..\html\Baker.html">
-                        <img src="..\Images\33 baker\Baker_ (11).jpg" class="ImageCenterZoom">
+                        <img class="lazyload ImageCenterZoom" data-src="..\Images\33 baker\Baker_ (11).jpg" src="..\Images\33 baker\Baker_ (11)_Small.jpg">
                     </a>
-    
                 </div>
-    
         </div>
 
     </div>
@@ -93,6 +66,13 @@
     <script src="..\js\jquery.min.js"></script>
     <script src="..\js\bootstrap.min.js"></script>
     <script src="..\js\script.js"></script>
+    <script src="..\js\lazyload.min.js"></script>
+    <script>
+        window.addEventListener("load", function(event) {
+            let images = document.querySelectorAll("[data-src]");
+            let lazy = lazyload(images, {"src": "data-src"});
+        });
+    </script>
 
 </body>
 </html>
