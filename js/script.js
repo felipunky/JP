@@ -64,6 +64,24 @@ $( document ).ready( function()
                            { $( this ).css( { 'transform':'scale( '+ux+' )' } ); }, duration : '500' }, 'linear' );
                              
     });
+
+    $( ".ProjectLink_1" ).on( "mouseenter touchstart", function()
+    {
+           
+                                                                                                                                    
+        $( ".ImageCenter" ).animate( { st: '+=0.04' }, { step: function( ux, fx )
+                           { $( this ).css( { 'transform':'scale( '+ux+' )' } ); }, duration : '500' }, 'linear' );
+
+                                                                                                                                           
+    });
+                
+    $( ".ProjectLink_1" ).on( "mouseleave touchend", function()
+    {
+
+        $( ".ImageCenter" ).animate( { st: '1.0' }, { step: function( ux, fx )
+                           { $( this ).css( { 'transform':'scale( '+ux+' )' } ); }, duration : '500' }, 'linear' );
+                             
+    });
                     
     $( ".Link" ).on( "mouseenter touchstart", function()
     {
