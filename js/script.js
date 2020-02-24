@@ -21,7 +21,7 @@ $( document ).ready( function()
     $( ".Blur" ).on( "mouseenter touchstart", function()
     {
                     
-        $( this ).animate( { "font-size": "110%" }, 200 );
+        $( this ).animate( { "font-size": "44px" }, 200 );
         $( ".TitleColour" ).text( "Portfolio" );
                     
         $( ".Title" ).css( "color", "#ffbf00" );
@@ -35,7 +35,7 @@ $( document ).ready( function()
     $( ".Blur" ).on( "mouseleave touchend", function()
     {
                  
-        $( this ).animate( { "font-size": "100%" }, 200 );
+        $( this ).animate( { "font-size": "40px" }, 200 );
                     
         $( ".Title" ).css( "color", "#ffffff" );
         $( ".TitleColour" ).css( "color", "#ffbf00" );
@@ -116,14 +116,14 @@ $( document ).ready( function()
     $( ".Images" ).on( "mouseenter touchstart", function()
     {
 
-        $( this ).animate( { "font-size": "50%" }, 200 );
+        $( this ).animate( { "font-size": "24px" }, 200 );
 
     });
     
     $( ".Images" ).on( "mouseleave touchend", function()
     {
 
-        $( this ).animate( { "font-size": "40%" }, 200 );
+        $( this ).animate( { "font-size": "20px" }, 200 );
 
     });
     
@@ -133,7 +133,7 @@ $( document ).ready( function()
     $( ".About" ).on( "mouseenter touchstart", function()
     {
 
-         $( this ).animate( { "font-size": "65%" }, 200 );
+         $( this ).animate( { "font-size": "30px" }, 200 );
          //$( ".InnerAbout" ).fadeIn( 500 );
 
     });
@@ -141,7 +141,7 @@ $( document ).ready( function()
     $( ".About" ).on( "mouseleave touchend", function()
      {
      
-         $( this ).animate( { "font-size": "60%" }, 200 );
+         $( this ).animate( { "font-size": "24px" }, 200 );
          //$( ".InnerAbout" ).fadeOut( 500 );
      
      });
@@ -152,7 +152,7 @@ $( document ).ready( function()
     $( ".ContactMail" ).on( "mouseenter touchstart", function()
     {
 
-        $( this ).animate( { "font-size": "65%" }, 200 );
+        $( this ).animate( { "font-size": "30px" }, 200 );
         //$( ".InnerContactMail" ).fadeIn( 500 );
 
     });
@@ -160,7 +160,7 @@ $( document ).ready( function()
     $( ".ContactMail" ).on( "mouseleave touchend", function()
     {
 
-        $( this ).animate( { "font-size": "60%" }, 200 );
+        $( this ).animate( { "font-size": "24px" }, 200 );
         //$( ".InnerContactMail" ).fadeOut( 500 );
 
     });
@@ -171,7 +171,7 @@ $( document ).ready( function()
     $( ".Projects" ).on( "mouseenter touchstart", function()
     {
 
-        $( this ).animate( { "font-size": "65%" }, 200 );
+        $( this ).animate( { "font-size": "30px" }, 200 );
         //$( ".InnerProjects" ).fadeIn( 500 );
 
     });
@@ -179,7 +179,7 @@ $( document ).ready( function()
     $( ".Projects" ).on( "mouseleave touchend", function()
     {
 
-        $( this ).animate( { "font-size": "60%" }, 200 );
+        $( this ).animate( { "font-size": "24px" }, 200 );
         //$( ".InnerProjects" ).fadeOut( 500 );
 
     });
@@ -187,14 +187,14 @@ $( document ).ready( function()
     $( ".Home" ).on( "mouseenter touchstart", function()
     {
 
-         $( this ).animate( { "font-size": "45%" }, 200 );
+         $( this ).animate( { "font-size": "34px" }, 200 );
 
     });
     
     $( ".Home" ).on( "mouseleave touchend", function()
     {
 
-         $( this ).animate( { "font-size": "40%" }, 200 );
+         $( this ).animate( { "font-size": "30px" }, 200 );
 
     });
 
