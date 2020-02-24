@@ -149,7 +149,7 @@ body
 .Blur
 {
 
-    font-size: 40px;
+    font-size: 30px;
     backdrop-filter: url(commonfilters.svg#filter);
     backdrop-filter: url(filters.svg#filter) blur(4px) saturate(150%) grayscale(30%);
     border-style: solid;
@@ -342,7 +342,7 @@ body
     border-color: #fff;
     display: inline;
     color: #fff;
-    font-size: 20px;
+    font-size: 16px;
 
 }
 

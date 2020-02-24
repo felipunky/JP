@@ -21,7 +21,7 @@ $( document ).ready( function()
     $( ".Blur" ).on( "mouseenter touchstart", function()
     {
                     
-        $( this ).animate( { "font-size": "44px" }, 200 );
+        $( this ).animate( { "font-size": "34px" }, 200 );
         $( ".TitleColour" ).text( "Portfolio" );
                     
         $( ".Title" ).css( "color", "#ffbf00" );
@@ -35,7 +35,7 @@ $( document ).ready( function()
     $( ".Blur" ).on( "mouseleave touchend", function()
     {
                  
-        $( this ).animate( { "font-size": "40px" }, 200 );
+        $( this ).animate( { "font-size": "30px" }, 200 );
                     
         $( ".Title" ).css( "color", "#ffffff" );
         $( ".TitleColour" ).css( "color", "#ffbf00" );
@@ -116,14 +116,14 @@ $( document ).ready( function()
     $( ".Images" ).on( "mouseenter touchstart", function()
     {
 
-        $( this ).animate( { "font-size": "24px" }, 200 );
+        $( this ).animate( { "font-size": "20px" }, 200 );
 
     });
     
     $( ".Images" ).on( "mouseleave touchend", function()
     {
 
-        $( this ).animate( { "font-size": "20px" }, 200 );
+        $( this ).animate( { "font-size": "16px" }, 200 );
 
     });
     
